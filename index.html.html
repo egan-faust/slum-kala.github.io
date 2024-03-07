@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+  <style>
+    .attribution {
+        font-family: outfit, sans-serif;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44);
+    }
+
+    body {
+        background-color: hsl(30, 54%, 90%);
+    }
+
+    .container {
+        width: 80%; /* Adjusted width for responsiveness */
+        margin: 0 auto; /* Centering horizontally */
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .img-container {
+        border: 0px solid black;
+        width: 100%; /* Adjusted width */
+        border-radius: 20px; /* Rounded border */
+    }
+     h1{
+        font-size: 30px;
+        text-align:left;
+   }
+
+
+    h1, h3 {
+        font-family: "Young Serif", serif;
+        color: hsl(14, 45%, 36%);
+    }
+
+    li, h4, p {
+        font-family: outfit, sans-serif;
+        color: hsl(24, 5%, 18%);
+    }
+
+    .wrapper {
+        width: 90%;
+        height: auto; /* Adjusted height for responsiveness */
+        background-color: hsl(330, 100%, 98%);
+        border-radius: 20px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        padding-top: 3px;
+    }
+
+     .txt-container2 {
+        margin: 20px; /* Adjusted margin */
+        padding-top: 0;
+        text-align: justify;
+
+    }
+    .p-container, .p-container1 {
+      margin-right:10px;
+      text-align: justify;
+    }
+    .txt-container2 { /* Adjusted margin */
+        margin-bottom: -5px;
+    }
+    .list {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .tebal{
+        /*margin-left: 20px;*/
+        font-weight: bolder;
+        color: hsl(14, 45%, 36%);
+    }
+    .kolom{ 
+      /*justify-content: space-around;*/
+      /*display: flex;*/
+      text-align: left;
+      columns: 2;
+      /*align-items: center;*/
+
+    }
+    .prep{
+      /*display:inline-block;*/
+    }
+    .warna3{
+      font-weight: bolder;
+    }
+    .nutrisi{
+      list-style-type: none;
+      border: 1px solid white;
+      margin-left: 0px;
+      padding: 5px;
+      /*text-align:left;*/
+          /*display: flex;*/
+    
+    }
+    ol {
+      margin:0 0 1.5em;
+      padding:0;
+      counter-reset:item;
+    }
+     
+    ol>li {
+      margin:0;
+      padding:0 0 0 2em;
+      text-indent:-2em;
+      list-style-type:none;
+      counter-increment:item;
+    }
+     
+    ol>li:before {
+      display:inline-block;
+      width:1.5em;
+      padding-right:0.5em;
+      font-weight:bold;
+      color: hsl(14, 45%, 36%);
+      text-align:right;
+      content:counter(item) ".";
+    }
+    .tebal-instruction
+
+    span {
+        color: hsl(14, 45%, 36%);
+        font-weight: bolder;
+    }
+
+    hr {
+        width: 90%; /* Adjusted width */
+    }
+    ol{
+        list-style: bold;
+    }
+
+    /* Media Query for Mobile (375px) */
+    @media only screen and (max-width: 375px) {
+        .container, .p-container, .txt-container {
+            width: 95%; /* Adjusted width for smaller screens */
+        }
+    }
+
+    /* Media Query for Desktop (1440px) */
+    @media only screen and (min-width: 1440px) {
+        .container, .p-container, .txt-container {
+            width: 70%; /* Adjusted width for larger screens */
+        }
+      @media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 70%; /* Adjusted font size for mobile */
+  }
+}
+    }
+  </style>
+  <title>Frontend Mentor | Recipe page</title>
+</head>
+<body>
+<div class="container">
+  <div class="img">
+    <img class="img-container" src="image-omelette.jpeg" title="Delicious Omelette" alt="Omelette">
+  </div>
+  <h1 class="txt-container1">Simple Omelette Recipe</h1>
+
+  <p class="p-container">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+  to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+
+  <div class="wrapper">
+    <h4 class="txt-container2 warna2">Preparation time</h4>
+      <ul class="prep-wrap">
+        <li class="prep"><span class="warna3">Total:</span> Approximately 10 minutes</li>
+        <li class="prep"><span class="warna3">Preparation:</span> 5 minutes</li>
+        <li class="prep"><span class="warna3">Cooking:</span> 5 minutes</li>
+      </ul>
+  </div>
+  <div>
+     <h3 class="txt-container1 warna">Ingredients</h3>
+      <ol>
+        <li class="list">2-3 large eggs</li>
+        <li class="list">Salt, to taste</li>
+        <li class="list">Pepper, to taste</li>
+        <li class="list">1 tablespoon of butter or oil</li>
+        <li class="list">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ol>
+  </div>
+<div class="">
+  <h3 class="txt-container1 warna">Instructions</h3>
+<ol>
+  <li class="list"><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+  You can add a tablespoon of water or milk for a fluffier texture.</li>
+
+  <li class="list"><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+
+  <li class="list"><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+  the eggs evenly coat the surface.</li>
+
+  <li class="list"><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+  middle, sprinkle your chosen fillings over one half of the omelette.</li>
+
+  <li class="list"><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
+  fillings. Let it cook for another minute, then slide it onto a plate.</li>
+
+  <li class="list"><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+</ol>
+</div>
+<div>
+  <h3 class="txt-container1">Nutrition</h3>
+
+  <p class="p-container1">The table below shows nutritional values per serving without the additional fillings.</p>
+  <ul class="kolom" >
+     <li class="nutrisi">Calories</li>
+      <li class="nutrisi tebal">277kcal</li></ul>
+      <hr>
+      <ul class="kolom">
+      <li class="nutrisi">Carbs</li>
+      <li class="nutrisi tebal">0g</li></ul>
+      <hr>
+      <ul class="kolom">
+      <li class="nutrisi">Protein</li>
+      <li class="nutrisi tebal">20g</li></ul>
+      <hr>
+      <ul class="kolom">
+      <li class="nutrisi">Fat</li>
+      <li class="nutrisi tebal">22g</li></ul>
+    
+  
+  
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Slum-per</a>.
+  </div>
+</div>
+</body>
+</html>
